@@ -1,0 +1,39 @@
+
+/* Class = "IBUILabel"; text = "Second View"; ObjectID = "29h-N2-YGT"; */
+"29h-N2-YGT.text" = "Second View";
+
+/* Class = "IBUIButton"; normalTitle = "Guest Login"; ObjectID = "2k3-g3-9xn"; */
+"2k3-g3-9xn.normalTitle" = "Guest Login";
+
+/* Class = "IBUIButton"; normalTitle = "Register"; ObjectID = "Bsf-G8-WsX"; */
+"Bsf-G8-WsX.normalTitle" = "Register";
+
+/* Class = "IBUIViewController"; title = "First"; ObjectID = "CZ4-MO-1fc"; */
+"CZ4-MO-1fc.title" = "First";
+
+/* Class = "IBUITextView"; text = "Loaded by the second view controller — an instance of SecondViewController — specified in the app delegate."; ObjectID = "DcM-Fx-MKR"; */
+"DcM-Fx-MKR.text" = "Loaded by the second view controller — an instance of SecondViewController — specified in the app delegate.";
+
+/* Class = "IBUIViewController"; title = "Second"; ObjectID = "QUy-BD-bpt"; */
+"QUy-BD-bpt.title" = "Second";
+
+/* Class = "IBUITabBarItem"; title = "Second"; ObjectID = "Z7h-1E-pvt"; */
+"Z7h-1E-pvt.title" = "Second";
+
+/* Class = "IBUILabel"; text = "First View"; ObjectID = "Zhg-ve-WU7"; */
+"Zhg-ve-WU7.text" = "First View";
+
+/* Class = "IBUILabel"; text = "Password:"; ObjectID = "bdZ-PM-Han"; */
+"bdZ-PM-Han.text" = "Password:";
+
+/* Class = "IBUIButton"; normalTitle = "Login"; ObjectID = "cEI-rH-vUX"; */
+"cEI-rH-vUX.normalTitle" = "Login";
+
+/* Class = "IBUILabel"; text = "Username:"; ObjectID = "fb7-CK-6PU"; */
+"fb7-CK-6PU.text" = "Username:";
+
+/* Class = "IBUITextView"; text = "Loaded by the first view controller — an instance of FirstViewController — specified in the app delegate."; ObjectID = "tZ3-Hv-Q7E"; */
+"tZ3-Hv-Q7E.text" = "Loaded by the first view controller — an instance of FirstViewController — specified in the app delegate.";
+
+/* Class = "IBUITabBarItem"; title = "First"; ObjectID = "u1e-5L-l1D"; */
+"u1e-5L-l1D.title" = "First";

@@ -1,0 +1,20 @@
+{
+	"BoolSetting" : {
+		"type" : "bool",
+		"defaultValue" : false
+	},
+	"RangeValueSetting" : {
+		"type" : "rangeValue",
+		"defaultValue" : 30,
+		"minValue" : 1,
+		"maxValue" : 70
+	},
+	"StringSetting" : {
+		"type" : "string",
+		"defaultValue" : "blih"
+	},
+	"UrlSetting" : {
+		"type" : "url",
+		"defaultValue" : "http://www.apple.com"
+	}
+}

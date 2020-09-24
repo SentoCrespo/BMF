@@ -1,0 +1,24 @@
+{
+	"BoolSetting": {
+		"type" : "bool",
+		"defaultValue" : true
+	},
+	"NumberSetting" : {
+			"type" : "number",
+			"defaultValue" : 10
+	},
+	"RangeValueSetting" : {
+		"type" : "rangeValue",
+		"defaultValue" : 10,
+		"minValue" : 5,
+		"maxValue" : 50
+	},
+	"StringSetting" : {
+		"type" : "string",
+		"defaultValue" : "blah"
+	},
+	"UrlSetting" : {
+		"type" : "url",
+		"defaultValue" : "http://www.google.com"	
+	}
+}

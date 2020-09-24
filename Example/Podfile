@@ -1,0 +1,67 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+workspace 'Example.xcworkspace'
+project 'Example/Example.xcodeproj'
+
+target :ExampleMac do
+
+  project 'ExampleMac/ExampleMac.xcodeproj'
+
+  platform :osx, '10.9'
+
+#pod 'JMSLogger'
+
+  pod 'CrashlyticsLumberjack', :git => 'https://bitbucket.org/buscarini/crashlyticslumberjack.git'
+
+  pod 'BMF/Core', :path => '../'
+  pod 'BMF/CoreData', :path => '../'
+  pod 'BMF/Themes', :path => '../'
+
+  inhibit_all_warnings!
+end
+
+target :Example do
+
+	project 'Example/Example.xcodeproj'
+
+	platform :ios, '8.0'
+  
+  #pod 'JMSLogger'
+  pod 'ReactiveCocoa', '~> 2.5'
+	
+	pod 'FlurrySDK', :git => 'https://buscarini@bitbucket.org/buscarini/flurry.git'
+	pod 'CrashlyticsLumberjack', :git => 'https://bitbucket.org/buscarini/crashlyticslumberjack.git'
+
+	pod 'BMF/Core', :path => '../'
+	pod 'BMF/CoreData', :path => '../'
+	pod 'BMF/Themes', :path => '../'
+  
+	inhibit_all_warnings!
+end
+
+target :ExampleTests do
+
+  project 'Example/Example.xcodeproj'
+
+  platform :ios, '8.0'
+  pod 'Specta', '~> 0.2'
+  pod 'Expecta', '~> 0.3'
+  pod 'OCMock', '~> 3'
+  pod 'OHHTTPStubs'
+
+  inhibit_all_warnings!
+end
+
+target :bmfTests do
+
+  project 'Example/Example.xcodeproj'
+
+  platform :ios, '8.0'
+
+  pod 'Specta', '~> 0.2'
+  pod 'Expecta', '~> 0.3'
+  pod 'OCMock', '~> 3'
+  pod 'OHHTTPStubs'
+
+  inhibit_all_warnings!
+end

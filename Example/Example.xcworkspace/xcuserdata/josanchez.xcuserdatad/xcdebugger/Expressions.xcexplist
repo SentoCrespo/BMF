@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[BMFSettingsManager registerSettings]:BMFSettingsManager.m">
+      </ContextState>
+      <ContextState
+         contextName = "+[NSManagedObject(MagicalRecord) MR_createInContext:]:NSManagedObject+MagicalRecord.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "(NSPersistentStoreCoordinator *)context.persistentStoreCoordinator">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[OCMInvocationMatcher matchesInvocation:]:OCMInvocationMatcher.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "(NSDictionary *)passedArg">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

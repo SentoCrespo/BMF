@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExampleDragDropCollectionViewsViewController">
+            <connections>
+                <outlet property="bottomCollectionView" destination="dAe-XA-uTh" id="pxz-a4-2hi"/>
+                <outlet property="leftCollectionView" destination="zUv-Jn-cW1" id="6X2-8n-WXZ"/>
+                <outlet property="rightCollectionView" destination="MkH-8Q-JF2" id="wTo-UE-hyy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="dAe-XA-uTh">
+                    <rect key="frame" x="0.0" y="650" width="768" height="374"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="374" id="jyP-9p-Gcg"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Yu2-Lz-S5c">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <cells/>
+                </collectionView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="zUv-Jn-cW1">
+                    <rect key="frame" x="0.0" y="0.0" width="301" height="531"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="301" id="hRQ-pg-8jH"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Lhy-1M-uok">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="20" minY="20" maxX="20" maxY="20"/>
+                    </collectionViewFlowLayout>
+                    <cells/>
+                </collectionView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="MkH-8Q-JF2">
+                    <rect key="frame" x="467" y="0.0" width="301" height="531"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="EBC-io-qN8">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <cells/>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="dAe-XA-uTh" secondAttribute="trailing" id="AjP-6N-vWN"/>
+                <constraint firstItem="MkH-8Q-JF2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Xo0-y7-jyY"/>
+                <constraint firstItem="dAe-XA-uTh" firstAttribute="top" secondItem="MkH-8Q-JF2" secondAttribute="bottom" constant="119" id="Zpw-sn-nF5"/>
+                <constraint firstItem="zUv-Jn-cW1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dXx-qc-L1f"/>
+                <constraint firstAttribute="trailing" secondItem="MkH-8Q-JF2" secondAttribute="trailing" id="enE-zk-QWh"/>
+                <constraint firstItem="zUv-Jn-cW1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hgT-Il-jwh"/>
+                <constraint firstItem="dAe-XA-uTh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lM6-Pd-q1D"/>
+                <constraint firstItem="MkH-8Q-JF2" firstAttribute="leading" secondItem="zUv-Jn-cW1" secondAttribute="trailing" constant="166" id="mbs-KO-RzQ"/>
+                <constraint firstItem="dAe-XA-uTh" firstAttribute="top" secondItem="zUv-Jn-cW1" secondAttribute="bottom" constant="119" id="oUa-ue-nOs"/>
+                <constraint firstAttribute="bottom" secondItem="dAe-XA-uTh" secondAttribute="bottom" id="sLx-19-zAb"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+</document>

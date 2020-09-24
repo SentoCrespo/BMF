@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="109" id="Obv-AS-ci6" customClass="BMFConsoleLogTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="425" height="109"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Obv-AS-ci6" id="Mvs-Le-Bpe">
+                <rect key="frame" x="0.0" y="0.0" width="425" height="108"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message Text" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFK-cZ-o5d">
+                        <rect key="frame" x="5" y="5" width="415" height="68"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="253" text="context label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPC-7d-jmV">
+                        <rect key="frame" x="5" y="78" width="415" height="15"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wPC-7d-jmV" firstAttribute="leading" secondItem="mFK-cZ-o5d" secondAttribute="leading" id="6QC-WG-FjA"/>
+                    <constraint firstItem="wPC-7d-jmV" firstAttribute="trailing" secondItem="mFK-cZ-o5d" secondAttribute="trailing" id="NP2-aQ-aKO"/>
+                    <constraint firstItem="mFK-cZ-o5d" firstAttribute="top" secondItem="Mvs-Le-Bpe" secondAttribute="top" constant="5" id="OgN-oZ-MnE"/>
+                    <constraint firstItem="wPC-7d-jmV" firstAttribute="top" secondItem="mFK-cZ-o5d" secondAttribute="bottom" constant="5" id="UYO-i6-8PC"/>
+                    <constraint firstItem="mFK-cZ-o5d" firstAttribute="leading" secondItem="Mvs-Le-Bpe" secondAttribute="leading" constant="5" id="eyE-Sr-KJA"/>
+                    <constraint firstAttribute="trailing" secondItem="mFK-cZ-o5d" secondAttribute="trailing" constant="5" id="k4R-MJ-blo"/>
+                    <constraint firstAttribute="bottom" secondItem="wPC-7d-jmV" secondAttribute="bottom" constant="15" id="zoB-4K-cWb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contextLabel" destination="wPC-7d-jmV" id="ZnW-xV-gMB"/>
+                <outlet property="messageLabel" destination="mFK-cZ-o5d" id="EyE-Kc-7NU"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

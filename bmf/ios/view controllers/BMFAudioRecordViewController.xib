@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BMFAudioRecordViewController">
+            <connections>
+                <outlet property="micImageView" destination="BHR-xk-1iG" id="965-dX-ZoE"/>
+                <outlet property="playButton" destination="n2B-Oy-Bla" id="zwW-cV-Cey"/>
+                <outlet property="recordButton" destination="5zd-o7-ZR6" id="GW3-Pn-SeO"/>
+                <outlet property="timeLabel" destination="78r-iA-3aG" id="jHt-dB-CJO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="750" verticalHuggingPriority="252" image="mic.png" translatesAutoresizingMaskIntoConstraints="NO" id="BHR-xk-1iG">
+                    <rect key="frame" x="384" y="0.0" width="0.0" height="1024"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="0:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25000000000000006" translatesAutoresizingMaskIntoConstraints="NO" id="78r-iA-3aG">
+                    <rect key="frame" x="24" y="780" width="224" height="224"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zd-o7-ZR6">
+                    <rect key="frame" x="272" y="780" width="224" height="224"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="5zd-o7-ZR6" secondAttribute="height" multiplier="1:1" id="J2D-ay-69k"/>
+                    </constraints>
+                    <state key="normal" image="BMF.bundle/record"/>
+                    <connections>
+                        <action selector="record:" destination="-1" eventType="touchUpInside" id="SuO-qU-KSG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2B-Oy-Bla">
+                    <rect key="frame" x="520" y="780" width="224" height="224"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="BMF.bundle/play">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="play:" destination="-1" eventType="touchUpInside" id="M0n-Zx-JNE"/>
+                    </connections>
+                </button>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1jX-ny-dot" userLabel="separator">
+                    <rect key="frame" x="744" y="892" width="24" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.43810340450000002" green="1" blue="0.20623564120000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="3ld-3c-udN"/>
+                        <constraint firstAttribute="height" constant="1" id="jdN-1u-UjV"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WmB-OL-fxM" userLabel="separator">
+                    <rect key="frame" x="248" y="892" width="24" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.43810340450000002" green="1" blue="0.20623564120000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="Tyu-3s-RQc"/>
+                        <constraint firstAttribute="height" constant="1" id="Z0S-Rr-xMw"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fCX-ls-SCe" userLabel="separator">
+                    <rect key="frame" x="0.0" y="902" width="24" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.43810340450000002" green="1" blue="0.20623564120000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="5s8-gt-IDx"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="bru-S1-07q"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dOp-8K-x4C" userLabel="separator">
+                    <rect key="frame" x="496" y="892" width="24" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.43810340450000002" green="1" blue="0.20623564120000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="GIV-PA-cTz"/>
+                        <constraint firstAttribute="height" constant="1" id="O6w-ac-XPn"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1jX-ny-dot" firstAttribute="centerY" secondItem="n2B-Oy-Bla" secondAttribute="centerY" id="1m9-sd-mCf"/>
+                <constraint firstAttribute="trailing" secondItem="1jX-ny-dot" secondAttribute="trailing" id="245-6N-WZt"/>
+                <constraint firstAttribute="centerX" secondItem="78r-iA-3aG" secondAttribute="centerX" multiplier="2" priority="749" id="42y-vQ-T4m"/>
+                <constraint firstItem="fCX-ls-SCe" firstAttribute="width" secondItem="dOp-8K-x4C" secondAttribute="width" id="4iV-xm-Usu"/>
+                <constraint firstItem="1jX-ny-dot" firstAttribute="width" secondItem="WmB-OL-fxM" secondAttribute="width" id="7AI-oN-LG5"/>
+                <constraint firstItem="BHR-xk-1iG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8ob-RX-eC5"/>
+                <constraint firstItem="5zd-o7-ZR6" firstAttribute="centerY" secondItem="n2B-Oy-Bla" secondAttribute="centerY" id="Ahe-d5-P1A"/>
+                <constraint firstItem="5zd-o7-ZR6" firstAttribute="width" secondItem="n2B-Oy-Bla" secondAttribute="width" id="BY2-Gq-MHu"/>
+                <constraint firstAttribute="centerX" secondItem="BHR-xk-1iG" secondAttribute="trailing" id="CS9-Kq-M9o"/>
+                <constraint firstAttribute="bottom" secondItem="5zd-o7-ZR6" secondAttribute="bottom" constant="20" symbolic="YES" id="GOq-ec-mH7"/>
+                <constraint firstAttribute="centerX" secondItem="BHR-xk-1iG" secondAttribute="centerX" id="HbN-lE-FNf"/>
+                <constraint firstItem="fCX-ls-SCe" firstAttribute="trailing" secondItem="78r-iA-3aG" secondAttribute="leading" id="LHL-6Z-9zX"/>
+                <constraint firstItem="n2B-Oy-Bla" firstAttribute="leading" secondItem="dOp-8K-x4C" secondAttribute="trailing" id="LJg-tO-Fax"/>
+                <constraint firstItem="5zd-o7-ZR6" firstAttribute="centerY" secondItem="dOp-8K-x4C" secondAttribute="centerY" id="OFl-x2-WYs"/>
+                <constraint firstAttribute="bottom" secondItem="BHR-xk-1iG" secondAttribute="bottom" id="P9E-OS-SgK"/>
+                <constraint firstAttribute="centerX" secondItem="n2B-Oy-Bla" secondAttribute="centerX" multiplier="0.666667" priority="749" id="PX0-uT-pj1"/>
+                <constraint firstItem="dOp-8K-x4C" firstAttribute="width" secondItem="WmB-OL-fxM" secondAttribute="width" id="RGY-qB-IvB"/>
+                <constraint firstAttribute="centerX" secondItem="5zd-o7-ZR6" secondAttribute="centerX" id="UEX-uX-gNI"/>
+                <constraint firstItem="fCX-ls-SCe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Yeh-im-pZy"/>
+                <constraint firstItem="5zd-o7-ZR6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="78r-iA-3aG" secondAttribute="trailing" constant="8" symbolic="YES" id="ZNI-Co-PfA"/>
+                <constraint firstItem="1jX-ny-dot" firstAttribute="leading" secondItem="n2B-Oy-Bla" secondAttribute="trailing" id="e0G-r0-occ"/>
+                <constraint firstItem="dOp-8K-x4C" firstAttribute="leading" secondItem="5zd-o7-ZR6" secondAttribute="trailing" id="kea-zw-BMg"/>
+                <constraint firstItem="5zd-o7-ZR6" firstAttribute="centerY" secondItem="78r-iA-3aG" secondAttribute="centerY" id="oIZ-bd-zba"/>
+                <constraint firstItem="78r-iA-3aG" firstAttribute="centerY" secondItem="WmB-OL-fxM" secondAttribute="centerY" id="ojc-0H-31R"/>
+                <constraint firstItem="5zd-o7-ZR6" firstAttribute="height" secondItem="78r-iA-3aG" secondAttribute="height" id="uEC-ZJ-xX2"/>
+                <constraint firstItem="5zd-o7-ZR6" firstAttribute="leading" secondItem="WmB-OL-fxM" secondAttribute="trailing" id="vHM-F8-0Xb"/>
+                <constraint firstItem="5zd-o7-ZR6" firstAttribute="height" secondItem="n2B-Oy-Bla" secondAttribute="height" id="vbn-vL-0U0"/>
+                <constraint firstItem="WmB-OL-fxM" firstAttribute="leading" secondItem="78r-iA-3aG" secondAttribute="trailing" id="xrK-Ss-9m7"/>
+                <constraint firstItem="fCX-ls-SCe" firstAttribute="centerY" secondItem="78r-iA-3aG" secondAttribute="centerY" constant="10.5" id="zb6-dU-KSv"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BMF.bundle/play" width="59" height="112"/>
+        <image name="BMF.bundle/record" width="118" height="224"/>
+        <image name="mic.png" width="59" height="112"/>
+    </resources>
+</document>
