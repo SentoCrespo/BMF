@@ -313,8 +313,7 @@ static NSString *webUserAgent = nil;
 				if (!webViewAgent) {
 					dispatch_sync(dispatch_get_main_queue(), ^{
 						#if TARGET_OS_IPHONE
-						UIWebView* webView = [[UIWebView alloc] initWithFrame:CGRectZero];
-						webViewAgent = [webView stringByEvaluatingJavaScriptFromString:@"navigator.userAgent"];
+						
 						#else
 						WebView *webView = [[WebView alloc] initWithFrame:CGRectZero];
 						webViewAgent = [webView userAgentForURL:url];

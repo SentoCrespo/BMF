@@ -182,7 +182,6 @@
 				AC8587D818DC3ACA007DF682 /* Frameworks */,
 				AC8587D918DC3ACA007DF682 /* Resources */,
 				A42F720050B0461A8FDD2B95 /* [CP] Copy Pods Resources */,
-				F6E7B1DC0FA1FEE4D0B20586 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -278,13 +277,40 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExampleMac/Pods-ExampleMac-resources.sh",
+				"${PODS_ROOT}/../../bmf/ios/subspecs/logs/BMFConsoleLogDetailViewController.xib",
+				"${PODS_ROOT}/../../bmf/ios/subspecs/logs/BMFConsoleLogTableViewCell.xib",
+				"${PODS_ROOT}/../../bmf/ios/subspecs/logs/BMFConsoleLogViewController.xib",
+				"${PODS_ROOT}/../../bmf/ios/view controllers/BMFAudioRecordViewController.xib",
+				"${PODS_ROOT}/../../bmf/ios/view controllers/BMFMapViewController.xib",
+				"${PODS_ROOT}/../../bmf/ios/view controllers/BMFTableViewController.xib",
+				"${PODS_ROOT}/../../bmf/ios/view controllers/BMFTimePickerViewController.xib",
+				"${PODS_ROOT}/../../bmf/ios/view controllers/BMFWebViewController.xib",
+				"${PODS_ROOT}/../../bmf/ios/views/cells/BMF3LabelsTableViewCell.xib",
+				"${PODS_ROOT}/../../bmf/ios/views/cells/BMFMailStyleTableViewCell.xib",
+				"${PODS_ROOT}/../../bmf/ios/views/cells/BMFStyle1TableViewCell.xib",
+				"${PODS_ROOT}/../../bmf/ios/views/cells/BMFSubtitleTableViewCell.xib",
+				"${PODS_CONFIGURATION_BUILD_DIR}/BMF-macOS/BMF.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BMFConsoleLogDetailViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BMFConsoleLogTableViewCell.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BMFConsoleLogViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BMFAudioRecordViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BMFMapViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BMFTableViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BMFTimePickerViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BMFWebViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BMF3LabelsTableViewCell.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BMFMailStyleTableViewCell.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BMFStyle1TableViewCell.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BMFSubtitleTableViewCell.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BMF.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-ExampleMac/Pods-ExampleMac-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExampleMac/Pods-ExampleMac-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BFB5560860E44AFBA247B794 /* [CP] Check Pods Manifest.lock */ = {
@@ -293,28 +319,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExampleMac-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		F6E7B1DC0FA1FEE4D0B20586 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-ExampleMac/Pods-ExampleMac-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
